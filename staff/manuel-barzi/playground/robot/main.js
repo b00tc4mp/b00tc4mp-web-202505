@@ -25,3 +25,11 @@ document.addEventListener('keydown', function (event) {
     robot.style.left = x + 'px'
     robot.style.top = y + 'px'
 })
+
+var arrowLeftButton = document.getElementById('arrow-left')
+
+arrowLeftButton.addEventListener('click', function (event) {
+    x = x - step
+
+    robot.style.left = x + 'px'
+})
