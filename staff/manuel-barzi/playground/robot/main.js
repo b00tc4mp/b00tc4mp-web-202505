@@ -33,3 +33,28 @@ arrowLeftButton.addEventListener('click', function (event) {
 
     robot.style.left = x + 'px'
 })
+
+var arrowRightButton = document.getElementById('arrow-right')
+
+arrowRightButton.addEventListener('click', function (event) {
+    x = x + step
+
+    robot.style.left = x + 'px'
+})
+
+var arrowUpButton = document.getElementById('arrow-up')
+
+arrowUpButton.addEventListener('click', function (event) {
+    y = y - step
+
+    robot.style.top = y + 'px'
+})
+
+
+var arrowDownButton = document.getElementById('arrow-down')
+
+arrowDownButton.addEventListener('click', function (event) {
+    y = y + step
+
+    robot.style.top = y + 'px'
+})
